@@ -19,6 +19,7 @@
 			padding-right: 109px
 			width: 78%
 	&__img
+		display: block
 		width: 337px
 		height: 354px
 		border-radius: 1000px 1000px 0px 1000px
@@ -29,3 +30,23 @@
 		img
 			position: absolute
 			padding: 100px 90px
+
+@media (max-width: 991px)
+	.container
+		max-width: 720px
+		.quality
+			justify-content: center
+			text-align: center
+			p
+				padding-right: 0px
+				width: 100%
+			.quality__img
+				display: none
+			.quality__info h2
+				font-size: 50px
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.quality
+			.quality__info h2
+				font-size: 40px

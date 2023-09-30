@@ -50,6 +50,7 @@
 			padding-top: 30px
 
 .faq-ball
+	display: block
 	width: 86px
 	height: 91px
 	border-radius: 1000px 1000px 0px 1000px
@@ -57,3 +58,34 @@
 	position: absolute
 	top: 108px
 	right: 0
+
+@media (max-width: 1090px)
+	.container
+		max-width: 960px
+		.section-faq-tittle
+			font-size: 50px
+		.faq__items
+			justify-content: center
+			.faq__card
+				width: 40%
+
+@media (max-width: 836px)
+	.container
+		max-width: 720px
+		.section-faq-tittle
+			font-size: 50px
+		.faq__items
+			justify-content: center
+			.faq__card
+				width: 100%
+	.faq-ball
+		display: none
+
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.section-faq-tittle
+			font-size: 40px
+			text-align: center
+		.faq__items .faq__card
+			background-position: center

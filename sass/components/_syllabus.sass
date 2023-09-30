@@ -33,6 +33,7 @@
 			&:hover
 				color: #D7A36A
 		.ball
+			display: block
 			width: 53px
 			height: 56px
 			border-radius: 1000px 1000px 1000px 0px
@@ -63,3 +64,54 @@
 			text-decoration: none
 			&:hover
 				color: #D7A36A
+
+@media (max-width: 1170px)
+	.container
+		max-width: 1200px
+		.syllabus__items
+			display: flex
+			flex-wrap: wrap
+			.syllabus__term
+				width: 30%
+				border: 1px solid #E0674D
+				border-radius: 25px
+				padding: 10px
+				.ball
+					display: none
+			.syllabus__term-bg
+				width: 100%
+				text-align: center
+				display: flex
+				align-items: center
+				padding: 10px 0px 10px 0px
+
+@media (max-width: 991px)
+	.container
+		max-width: 720px
+		.syllabus__items
+			justify-content: center
+			align-items: center
+			text-align: center
+			.syllabus__term
+				border: 1px solid #E0674D
+				border-radius: 25px
+				padding: 10px
+				width: 100%
+
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.syllabus-tittle
+			text-align: center
+			font-size: 40px
+@media (max-width: 420px)
+	.container
+		width: 100%
+		.syllabus__term-bg
+			gap: 10px
+			border-radius: 25px
+			a
+				font-size: 12px
+@media (max-width: 320px)
+	.container
+		width: 100%

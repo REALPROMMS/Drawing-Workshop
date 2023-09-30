@@ -39,3 +39,47 @@ section-card
 			line-height: 19.2px
 			padding-top: 20px
 			padding-bottom: 25px
+
+@media (max-width: 1170px)
+	.container
+		max-width: 1200px
+@media (max-width: 1070px)
+	.container
+		max-width: 960px
+@media (max-width: 991px)
+	.container
+		max-width: 720px
+		.content__items
+			display: flex
+			flex-wrap: wrap
+			.content__card
+				width: 47%
+
+@media (max-width: 838px)
+	.container
+		max-width: 720px
+		.content__items
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			.content__card
+				width: 38%
+
+@media (max-width: 767px)
+	.container
+		max-width: 540px
+		.content__items
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			justify-content: center
+			.content__card
+				width: 98%
+.section-card-tittle
+	font-size: 47px
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.section-card-tittle
+			font-size: 40px
+			text-align: center

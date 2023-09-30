@@ -22,6 +22,7 @@
 .course__text
 	position: relative
 	p
+		display: block
 		position: absolute
 		color: #F8EFE5
 		font-family: Mochiy Pop One
@@ -35,6 +36,7 @@
 		z-index: 10
 
 	.drawing-green
+		display: block
 		width: 337px
 		height: 354px
 		border-radius: 1000px 1000px 0px 1000px
@@ -45,6 +47,7 @@
 		margin-right: 330px
 		z-index: 3
 	.drawing-orange
+		display: block
 		width: 337px
 		height: 354px
 		border-radius: 1000px 1000px 0px 1000px
@@ -55,6 +58,7 @@
 		z-index: 1
 		margin-right: 162px
 	.drawing-brown
+		display: block
 		width: 337px
 		height: 354px
 		border-radius: 1000px 1000px 0px 1000px
@@ -62,3 +66,38 @@
 		position: absolute
 		top: 3%
 		right: 0%
+
+@media (max-width: 1410px)
+	.container
+		max-width: 1200px
+		.course__info
+			p
+				width: 35%
+
+@media (max-width: 1110px)
+	.container
+		.course__info
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			p
+				width: 100%
+				max-width: 1200px
+		.course__text
+			p
+				display: none
+		.drawing-orange
+			display: none
+		.drawing-brown
+			display: none
+		.drawing-green
+			display: none
+
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.course__info
+			background-position-x: center
+			h2
+				font-size: 40px

@@ -27,6 +27,7 @@
 			max-width: 100%
 			z-index: 2
 		.qoute
+			display: block
 			position: absolute
 			top: 38%
 			right: 42%
@@ -58,6 +59,7 @@
 			padding-bottom: 56.5px
 			max-width: 100%
 		.qoute
+			display: block
 			position: absolute
 			top: 38%
 			right: 42%
@@ -80,3 +82,71 @@
 	border-radius: 20px
 	background: #FFF
 	box-shadow: 9px 4px 20px 0px rgba(0, 0, 0, 0.10)
+
+@media (max-width: 1230px)
+	.container
+		max-width: 1200px
+		.reviews__items
+			.reviews__block-2--tittle
+				font-size: 15px
+			.reviews__block-1--tittle
+				font-size: 15px
+
+@media (max-width: 1190px)
+	.container
+		max-width: 1200px
+		.reviews__items
+			.reviews__block-2
+				.qoute
+					display: none
+				&--tittle
+					padding: 20px 20px 20px 20px
+			.reviews__block-1
+				.qoute
+					display: none
+				&--tittle
+					padding: 20px 20px 57px 20px
+
+@media (max-width: 991px)
+	.container
+		max-width: 720px
+		.reviews__items
+			.reviews__block-2
+				&--tittle
+					font-size: 14px
+			.reviews__block-1
+				&--tittle
+					font-size: 14px
+
+@media (max-width: 836px)
+	.container
+		max-width: 720px
+		.reviews__items
+			flex-direction: column
+			.reviews__block-1
+				width: 100%
+				display: flex
+				flex-direction: column
+				min-height: 0px
+				background-size: cover
+				background-blend-mode: hard-light
+				&--tittle
+					color: black
+					font-size: 17px
+			.reviews__block-2
+				width: 100%
+				display: flex
+				flex-direction: column
+				min-height: 0px
+				background-size: cover
+				background-blend-mode: hard-light
+				&--tittle
+					color: black
+					font-size: 17px
+
+@media (max-width: 620px)
+	.container
+		width: 100%
+		.reviews h2
+			font-size: 40px
+			text-align: center

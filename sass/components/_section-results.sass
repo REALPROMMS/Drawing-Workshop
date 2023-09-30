@@ -30,3 +30,23 @@
 		img
 			position: absolute
 			padding: 100px 90px
+
+@media (max-width: 991px)
+	.container
+		max-width: 720px
+		.results
+			justify-content: center
+			text-align: center
+			p
+				padding-right: 0px
+				width: 100%
+			.results__img
+				display: none
+			.results__info h2
+				font-size: 50px
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.results
+			.results__info h2
+				font-size: 40px
