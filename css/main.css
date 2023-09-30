@@ -77,15 +77,15 @@
   padding-top: 40px;
 }
 .heading .heading__right .right__info h1 span {
-  color: #D7A36A;
+  color: #E0674D;
 }
 .heading .heading__right .right__info p {
   color: #353535;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 25px;
   width: 163%;
+  margin-bottom: 20px;
 }
 .heading .heading__right .right__info .heading__info-link {
   color: #F8EFE5;
@@ -175,6 +175,10 @@
   .container .heading .heading__right {
     width: 52%;
   }
+  .container .heading .navbar {
+    justify-content: center;
+    width: 97%;
+  }
   .top-ball {
     display: none;
   }
@@ -201,6 +205,7 @@
   }
   .container .heading .heading__right .navbar {
     justify-content: center;
+    width: 97%;
   }
   .container .heading .heading__right .right__info {
     width: 100%;
@@ -263,7 +268,7 @@
     width: 100%;
   }
   .container .heading .heading__right .right__info h1 {
-    width: 107%;
+    width: 97%;
     font-size: 24px;
   }
   .container .heading .heading__right .right__info p {
@@ -659,7 +664,6 @@ section-card {
 .catalog__card {
   border-radius: 20px;
   border: 1.633px solid #E0674D;
-  opacity: 0.6;
   background: #F8EFE5;
   box-shadow: 0px 3.26593px 12.24724px 0px rgba(0, 0, 0, 0.04);
   padding: 40px 20px;
@@ -1572,7 +1576,8 @@ section-card {
 .instructors__items {
   display: flex;
   text-align: center;
-  gap: 30px;
+  gap: 2%;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 120px;
 }
