@@ -14,7 +14,7 @@
 }
 .heading .heading__left .left__info {
   width: 48%;
-  background-image: url("/img/header/bggg.png");
+  background-image: url("../img/header/bggg.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -310,7 +310,7 @@
 }
 .why__block-1 {
   width: 48%;
-  background-image: url("/img/catalog/bg2.svg");
+  background-image: url("../img/catalog/bg2.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: left;
@@ -333,7 +333,7 @@
   width: 48%;
   display: flex;
   align-items: flex-end;
-  background-image: url("/img/catalog/bg2.svg");
+  background-image: url("../img/catalog/bg2.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: left;
@@ -942,7 +942,7 @@ section-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("/img/catalog/Rectangle 1.png");
+  background-image: url("../img/catalog/Rectangle 1.png");
   background-repeat: no-repeat;
   background-position: top;
   min-height: 681px;
@@ -980,7 +980,7 @@ section-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("/img/catalog/Rectangle 2.png");
+  background-image: url("../img/catalog/Rectangle 2.png");
   background-repeat: no-repeat;
   background-position: top;
   min-height: 681px;
@@ -1185,7 +1185,7 @@ section-card {
 .faq__items .faq__card {
   width: 30%;
   position: relative;
-  background-image: url("/img/catalog/bg2.svg");
+  background-image: url("../img/catalog/bg2.svg");
   background-repeat: no-repeat;
   background-position: unset;
   min-height: 200px;
@@ -1389,7 +1389,7 @@ section-card {
   padding: 120px 2em;
 }
 .course__info {
-  background-image: url("/img/catalog/bg2.svg");
+  background-image: url("../img/catalog/bg2.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: left;
@@ -1627,25 +1627,25 @@ section-card {
 }
 
 .bg__item-block-1 {
-  background-image: url("/img/catalog/instr/man1.png");
+  background-image: url("../img/catalog/instr/man1.png");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .bg__item-block-2 {
-  background-image: url("/img/catalog/instr/girl1.png");
+  background-image: url("../img/catalog/instr/girl1.png");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .bg__item-block-3 {
-  background-image: url("/img/catalog/instr/man2.png");
+  background-image: url("../img/catalog/instr/man2.png");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .bg__item-block-4 {
-  background-image: url("/img/catalog/instr/girl2.png");
+  background-image: url("../img/catalog/instr/girl2.png");
   background-repeat: no-repeat;
   background-position: top;
 }
