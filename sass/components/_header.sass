@@ -166,20 +166,43 @@
 				display: flex
 				flex-direction: column
 				text-align: center
+				.navbar
+					justify-content: center
 				.right__info
 					width: 100%
 					h1
-						font-size: 38px
-						width: 100%
+						font-size: 35px
+						width: 105%
+						text-align: center
+						align-items: center
+						display: flex
+						flex-direction: column
 					p
 						font-size: 18px
 						width: 100%
 					.small-text
 						font-size: 14px
-@media (max-width: 520px)
+@media (max-width: 570px)
 	.container
 		width: 100%
-		.navbar
+		.heading
+			.heading__right
+				.right__info
+					h1
+						font-size: 31px
+						width: 107%
+						font-size: 35px
+						width: 105%
+
+@media (max-width: 500px) and (min-width: 440px)
+	.container
+		width: 100%
+		.heading
+			.heading__right
+				.right__info
+					h1
+						width: 107%
+						font-size: 24px
 
 @media (max-width: 440px)
 	.container
@@ -188,19 +211,23 @@
 			.heading__right
 				.right__info
 					h1
-						font-size: 34px
-				.navbar
-					background-color: white
-					justify-content: center
-					border-radius: 200px
-					.navlist
-						display: block
+						width: 107%
+						font-size: 24px
+		.navbar
+			background-color: white
+			justify-content: center
+			border-radius: 200px
+			.navlist
+				display: block
 
-@media (max-width: 420px)
+@media (max-width: 390px)
 	.container
 		width: 100%
 		.heading
 			.heading__right
 				.right__info
 					h1
-						font-size: 31px
+						width: 107%
+						font-size: 24px
+					p
+						font-size: 12px
