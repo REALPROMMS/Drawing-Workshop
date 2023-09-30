@@ -31,9 +31,12 @@
 				width: 155px
 				height: 165px
 				padding: 45px 32px
+			a
+				text-decoration: none
+				color: #F8EFE5
 
 	.heading__right
-		width: 44%
+		width: 36%
 		.heading__menu
 			display: flex
 			justify-content: space-between
@@ -84,12 +87,16 @@
 				flex-direction: column
 				align-items: center
 				padding: 5px 0px
+				&:hover
+					color: #353535
 			.small-text
 				color: #F8EFE5
 				font-family: Montserrat
 				font-size: 16px
 				font-weight: 600
 				padding-top: 5px
+				&:hover
+					color: #353535
 .top-ball
 	width: 97px
 	height: 103px
@@ -97,9 +104,11 @@
 	background: #E0674D
 	position: absolute
 	top: 4%
-	right: 5%
+	right: 9%
+	display: block
 
 .bootom-ball
+	display: block
 	position: absolute
 	z-index: 1
 	top: 83%
@@ -108,3 +117,141 @@
 	height: 103px
 	border-radius: 1000px 1000px 0px 1000px
 	background: linear-gradient(0deg, #D7A36A 0%, #D7A36A 100%)
+
+@media (max-width: 1360px)
+	.container
+		width: 1200px
+		.heading
+			.heading__left
+				width: 100%
+				.left__info
+					.left__info-text
+						font-size: 20px
+						font-weight: 400
+			.heading__right
+				width: 36%
+				margin-left: 20px
+				.right__info
+					width: 68%
+					h1
+						font-size: 26px
+						width: 100%
+					p
+						font-size: 18px
+						width: 150%
+					.small-text
+						font-size: 12px
+
+@media (max-width: 991px)
+	.container
+		width: 960px
+		.navbar
+			background-color: #F8EFE5
+			.nav-btn
+				display: block
+				font-size: 2em
+				padding-inline: 7.5em
+				padding-bottom: 3px
+				background-color: #F8EFE5
+				color: #353535
+				border: none
+				cursor: pointer
+				&:hover
+					color: #D7A36A
+			.navlist
+				display: none
+		.drop
+			padding-top: 2px
+		.drop:hover .navlist
+			display: block
+			position: absolute
+			background-color: #F8EFE5
+			right: 1px
+
+@media (max-width: 950px)
+	.top-ball
+		display: none
+	.bootom-ball
+		display: none
+@media (max-width: 767px)
+	.container
+		width: 720px
+
+		.heading
+			.heading__left
+				width: 0%
+				display: none
+				.left__info
+					background-image: none
+			.heading__right
+				width: 100%
+				display: flex
+				flex-direction: column
+				text-align: center
+				.right__info
+					width: 100%
+					h1
+						font-size: 38px
+						width: 100%
+					p
+						font-size: 18px
+						width: 100%
+					.small-text
+						font-size: 14px
+
+		.navbar
+			background-color: #F8EFE5
+			.drop-logo
+				display: block
+			.nav-btn
+				padding-inline: 19.5em
+				&:hover
+					color: #D7A36A
+
+		.top-ball
+			display: none
+		.bootom-ball
+			display: none
+
+@media (max-width: 620px)
+	.container
+		width: 100%
+		.heading
+			.heading__right
+		.navbar
+			.nav-btn
+				padding-inline: 16.5em
+
+@media (max-width: 520px)
+	.container
+		width: 100%
+		.heading
+			.heading__right
+		.navbar
+			.nav-btn
+				padding-inline: 13.5em
+@media (max-width: 420px)
+	.container
+		width: 100%
+		.heading
+			.heading__right
+		.navbar
+			.nav-btn
+				padding-inline: 9.5em
+	.top-ball
+		display: none
+	.bootom-ball
+		display: none
+
+@media (max-width: 320px)
+	.container
+		width: 100%
+		.heading
+			.heading__right
+		.navbar
+			.nav-btn
+				padding-inline: 6.5em
+	.top-ball
+		display: none
+	.bootom-ball
+		display: none

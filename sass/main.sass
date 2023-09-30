@@ -21,3 +21,54 @@
 .container
 	max-width: 1440px
 	margin: 0 auto
+
+.drop-logo
+	display: none
+.navbar
+	display: flex
+	background-color: white
+	border-radius: 25px
+.navlist
+	display: flex
+	gap: 10px
+	padding: 0px 20px
+	a
+		display: block
+		padding: 1em
+		text-decoration: none
+		color: #353535
+		font-family: Montserrat
+		font-size: 14px
+		font-weight: 700
+	a:hover
+		color: #D7A36A
+	.active
+		color: #D7A36A
+
+.nav-btn
+	display: none
+
+@media (max-width: 1360px)
+	.navbar
+		display: flex
+		background-color: white
+		border-radius: 25px
+		.navlist
+			display: flex
+			gap: 0px
+			a
+				padding: 10px
+				display: block
+				text-decoration: none
+				color: #353535
+				font-family: Montserrat
+				font-size: 12px
+			a:hover
+				color: #D7A36A
+			.active
+				color: #D7A36A
+@media (max-width: 1060px)
+	.navbar
+		display: flex
+		background-color: #F8EFE5
+		border-radius: 25px
