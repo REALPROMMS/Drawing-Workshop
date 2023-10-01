@@ -1655,6 +1655,7 @@ section-card {
   }
   .container .instructors__items {
     justify-content: space-around;
+    row-gap: 20px;
   }
   .container .instructors__items .instructors__block {
     width: 47%;
