@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main2.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -23,43 +24,54 @@
 
 <body>
 
-	<header>
-		<div class="container bg">
-			<div class="heading">
-				<div class="heading__left">
-					<div class="left__info">
-						<p class="left__info-text"><a href="index.html">
-								Drawing<br>
-								TheBody<br>
-								Course</p>
-						</a>
-						<div class="top-ball"></div>
-						<div class="bootom-ball"></div>
-					</div>
+	<header class="header">
+		<div class="header__container _container">
+			<div class="header__logo"> </span></div>
+			<div class="header__menu menu">
+				<div class="menu__burger burger">
+					<span></span> <span></span> <span></span>
 				</div>
-				<div class="heading__right">
-					<div class="navbar">
-						<div class="drop">
-							<div class="navlist">
-								<a class="menu__link active" href="index.html">Home</a>
-								<a class="menu__link" href="#why">Why&nbsp;Us</a>
-								<a class="menu__link" href="#overview">Overview</a>
-								<a class="menu__link" href="#reviews">Reviews</a>
-								<a class="menu__link" href="#contact">Contact</a>
-							</div>
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li><a href="index.html" class="menu__link _goto-block active-home">Home</a></li>
+						<li><a href="#why" class="menu__link _goto-block">Why Us</a></li>
+						<li><a href="#lessons" class="menu__link _goto-block">Overview</a></li>
+						<li><a href="#reviews" class="menu__link _goto-block">Reviews</a></li>
+						<li><a href="#footer" class="menu__link _goto-block">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="main__container _container">
+			<div class="main-flex">
+				<div class="main__image">
+					<picture>
+						<source srcset="/img/header/bg.png" type="image/svg" media="(min-width: 1330px)">
+						<source srcset="/img/header/bg.png" type="image/svg" media="(min-width: 992px)">
+						<source srcset="/img/header/bg.png" type="image/svg" media="(max-width: 992px)">
+						<img src="/img/header/bg.png" alt="bg" />
+					</picture>
+				</div>
+
+				<div class="main__content">
+					<h1 class="title">The Definitive Online <span>Drawing</span> Workshop</h1>
+					<div class="text">
+						Learn Figure, Character and Animal Drawing from Start to Finish
+					</div>
+					<div class="main__actions">
+						<div class="div-btn">
+							<a href="#price" class="btn btn-primary _goto-block">Buy now<br></a>
+							<a class="btn-link-a" href="#">From $10</a>
 						</div>
 					</div>
-					<div class="right__info">
-						<h1>The Definitive
-							Online <span>Drawing</span> Workshop</h1>
-						<p>Learn Figure, Character and Animal Drawing from Start to Finish</p>
-						<a class="heading__info-link" href="#">Buy now<br>
-							<p class="heading__info-text small-text">From $10</p>
-						</a>
-					</div>
 				</div>
+
 			</div>
-	</header>
+		</div>
+	</section>
 
 	<section-text>
 		<div class="container">
@@ -91,93 +103,97 @@
 	</section-text>
 
 	<section-card>
-		<div class="container bg-card">
-			<h2 id="overview" class="section-card-tittle">What is included</h2>
-			<div class="content__items">
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/arrow.svg" alt="icons">
-						<h5>Video Lessons</h5>
+		<div class="bg-bg">
+			<div class="container bg-card">
+				<h2 id="overview" class="section-card-tittle">What is included</h2>
+				<div class="content__items">
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/arrow.svg" alt="icons">
+							<h5>Video Lessons</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Over 30 hours of high-definition video tutorials covering all topics. Lessons can be streamed or
+								downloaded.</p>
+						</div>
 					</div>
-					<div class="content__card-subtittle">
-						<p>Over 30 hours of high-definition video tutorials covering all topics. Lessons can be streamed or
-							downloaded.</p>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/book.svg" alt="icons">
+							<h5>Written Guides</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Comprehensive digital workbook with detailed instructions and diagrams for each lesson.</p>
+						</div>
 					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/book.svg" alt="icons">
-						<h5>Written Guides</h5>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/schet.svg" alt="icons">
+							<h5>Reference Materials</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Extensive library of 500+ high-res images of human and animal photo references.</p>
+						</div>
 					</div>
-					<div class="content__card-subtittle">
-						<p>Comprehensive digital workbook with detailed instructions and diagrams for each lesson.</p>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/home.svg" alt="icons">
+							<h5>Assignments</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Weekly homework assignments to apply skills with instructor feedback.</p>
+						</div>
 					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/schet.svg" alt="icons">
-						<h5>Reference Materials</h5>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/shar.svg" alt="icons">
+							<h5>Community Forums</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Private online discussion forum for students to interact with instructor and each other.</p>
+						</div>
 					</div>
-					<div class="content__card-subtittle">
-						<p>Extensive library of 500+ high-res images of human and animal photo references.</p>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/chel.svg" alt="icons">
+							<h5>Critique Sessions</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Opportunities for one-on-one portfolio reviews and feedback sessions with the instructor.</p>
+						</div>
 					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/home.svg" alt="icons">
-						<h5>Assignments</h5>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/qub.svg" alt="icons">
+							<h5>Projects</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Multi-week projects to conceptualize and illustrate original characters, creatures and scenes.
+							</p>
+						</div>
 					</div>
-					<div class="content__card-subtittle">
-						<p>Weekly homework assignments to apply skills with instructor feedback.</p>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/galochka.svg" alt="icons">
+							<h5>Certificate of Completion</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Awarded to students who complete all lessons and assignments successfully.</p>
+						</div>
 					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/shar.svg" alt="icons">
-						<h5>Community Forums</h5>
-					</div>
-					<div class="content__card-subtittle">
-						<p>Private online discussion forum for students to interact with instructor and each other.</p>
-					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/chel.svg" alt="icons">
-						<h5>Critique Sessions</h5>
-					</div>
-					<div class="content__card-subtittle">
-						<p>Opportunities for one-on-one portfolio reviews and feedback sessions with the instructor.</p>
-					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/qub.svg" alt="icons">
-						<h5>Projects</h5>
-					</div>
-					<div class="content__card-subtittle">
-						<p>Multi-week projects to conceptualize and illustrate original characters, creatures and scenes.</p>
-					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/galochka.svg" alt="icons">
-						<h5>Certificate of Completion</h5>
-					</div>
-					<div class="content__card-subtittle">
-						<p>Awarded to students who complete all lessons and assignments successfully.</p>
-					</div>
-				</div>
-				<div class="content__card">
-					<div class="content__card-tittle">
-						<img src="icons/zamok.svg" alt="icons">
-						<h5>Lifetime Access</h5>
-					</div>
-					<div class="content__card-subtittle">
-						<p>Students can re-watch lessons and access materials indefinitely.</p>
+					<div class="content__card">
+						<div class="content__card-tittle">
+							<img src="icons/zamok.svg" alt="icons">
+							<h5>Lifetime Access</h5>
+						</div>
+						<div class="content__card-subtittle">
+							<p>Students can re-watch lessons and access materials indefinitely.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</section-card>
 
 	<section-syllabus>
@@ -230,7 +246,7 @@
 
 	<section-choose>
 		<div class="container bg-items">
-			<h2 class="section-choose-tittle">Choose your plan</h2>
+			<h2 id="price" class="section-choose-tittle">Choose your plan</h2>
 			<div class="catalog__items">
 				<div class="catalog__card">
 					<div class="catalog__card-tittle">
@@ -353,21 +369,26 @@
 	</section-choose>
 
 	<section-money>
-		<div class="container">
-			<div class="money">
-				<div class="money__info">
-					<h2>Money Back Guarantee</h2>
-					<p>We are confident in the quality of our training. If you do not achieve the desired results during the
-						training, we will refund your money. You can also make a refund before the second session if you
-						decide
-						to
-						discontinue the training.</p>
-				</div>
-				<div class="money__img">
-					<img src="icons/safe.svg" alt="safe">
+
+		<div class="bg-bg">
+			<div class="container">
+				<div class="money">
+					<div class="money__info">
+						<h2>Money Back Guarantee</h2>
+						<p>We are confident in the quality of our training. If you do not achieve the desired results during
+							the
+							training, we will refund your money. You can also make a refund before the second session if you
+							decide
+							to
+							discontinue the training.</p>
+					</div>
+					<div class="money__img">
+						<img src="icons/safe.svg" alt="safe">
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</section-money>
 
 	<section-code>
@@ -406,25 +427,31 @@
 	</section-code>
 
 	<section-results>
-		<div class="container">
-			<div class="results">
-				<div class="results__info">
-					<h2>Results Guarantee</h2>
-					<p>After completing the course, you will become a full-fledged specialist and will be able to get a job
-						in leading companies or work on your own projects. Our graduates successfully apply their knowledge in
-						practice.</p>
-				</div>
-				<div class="results__img">
-					<img src="icons/crown.svg" alt="crown">
+
+		<div class="bg-bg">
+			<div class="container">
+				<div class="results">
+					<div class="results__info">
+						<h2>Results Guarantee</h2>
+						<p>After completing the course, you will become a full-fledged specialist and will be able to get a
+							job
+							in leading companies or work on your own projects. Our graduates successfully apply their knowledge
+							in
+							practice.</p>
+					</div>
+					<div class="results__img">
+						<img src="icons/crown.svg" alt="crown">
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</section-results>
 
 	<section-faq>
 		<div class="container bg-faq">
 			<h2 class="section-faq-tittle">FAQ - Common questions</h2>
-			<div class="faq__items">
+			<div id="lessons" class="faq__items">
 				<div class="faq__card">
 					<h5>How long is the training?</h5>
 					<p>Training lasts 12 weeks. Lessons are opened gradually based on your progress and homework assignments.
@@ -464,47 +491,54 @@
 	</section-faq>
 
 	<section-about>
-		<div class="container bg-about">
-			<h2 class="section-about-tittle">About the profession</h2>
-			<p class="section-about-subtittle">Welcome to the captivating realm of DrawingTheBodyCourse, where the art of
-				figure, character, and animal
-				drawing takes center stage.</p>
-			<h3 class="section-about-tittle-h3">Why Choose a Career in Figure Drawing?</h3>
-			<div class="about__items">
-				<div class="about__card">
-					<div class="about__card-tittle">
-						<img src="icons/about/image-rectangle.svg" alt="icons">
-						<h5>Lucrative Prospects</h5>
+		<div class="bg-bg">
+			<div class="container bg-about">
+				<h2 class="section-about-tittle">About the profession</h2>
+				<p class="section-about-subtittle">Welcome to the captivating realm of DrawingTheBodyCourse, where the art
+					of
+					figure, character, and animal
+					drawing takes center stage.</p>
+				<h3 class="section-about-tittle-h3">Why Choose a Career in Figure Drawing?</h3>
+				<div class="about__items">
+					<div class="about__card">
+						<div class="about__card-tittle">
+							<img src="icons/about/image-rectangle.svg" alt="icons">
+							<h5>Lucrative Prospects</h5>
+						</div>
+						<div class="about__card-subtittle">
+							<p>Delve into a profession where your creative talents are rewarded handsomely. Figure drawing
+								specialists often command impressive incomes, making it a financially promising path.</p>
+						</div>
 					</div>
-					<div class="about__card-subtittle">
-						<p>Delve into a profession where your creative talents are rewarded handsomely. Figure drawing
-							specialists often command impressive incomes, making it a financially promising path.</p>
+					<div class="about__card">
+						<div class="about__card-tittle">
+							<img src="icons/about/eye.svg" alt="icons">
+							<h5>Limitless Creativity</h5>
+						</div>
+						<div class="about__card-subtittle">
+							<p>Figure drawing unlocks the gateway to boundless creativity. Whether your passion lies in
+								crafting
+								lifelike humans, fantastical characters, or captivating animals, this profession empowers you to
+								explore your artistic potential without boundaries.</p>
+						</div>
 					</div>
-				</div>
-				<div class="about__card">
-					<div class="about__card-tittle">
-						<img src="icons/about/eye.svg" alt="icons">
-						<h5>Limitless Creativity</h5>
-					</div>
-					<div class="about__card-subtittle">
-						<p>Figure drawing unlocks the gateway to boundless creativity. Whether your passion lies in crafting
-							lifelike humans, fantastical characters, or captivating animals, this profession empowers you to
-							explore your artistic potential without boundaries.</p>
-					</div>
-				</div>
-				<div class="about__card">
-					<div class="about__card-tittle">
-						<img src="icons/about/smile-ellipse.svg" alt="icons">
-						<h5>Expansive Opportunities</h5>
-					</div>
-					<div class="about__card-subtittle">
-						<p>In the digital age, the demand for skilled figure drawing artists continues to soar. As the world
-							increasingly embraces visual storytelling, artists adept in the art of figure drawing will find an
-							abundance of doors opening to thrilling career prospects.</p>
+					<div class="about__card">
+						<div class="about__card-tittle">
+							<img src="icons/about/smile-ellipse.svg" alt="icons">
+							<h5>Expansive Opportunities</h5>
+						</div>
+						<div class="about__card-subtittle">
+							<p>In the digital age, the demand for skilled figure drawing artists continues to soar. As the
+								world
+								increasingly embraces visual storytelling, artists adept in the art of figure drawing will find
+								an
+								abundance of doors opening to thrilling career prospects.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</section-about>
 
 	<section-course>
@@ -531,18 +565,21 @@
 	</section-course>
 
 	<section-quality>
-		<div class="container">
-			<div class="quality">
-				<div class="quality__info">
-					<h2>Quality Certifications</h2>
-					<p>We have certificates to prove the quality of our training. Our students receive certificates at the
-						end of the course to prove that they are professionally trained.</p>
-				</div>
-				<div class="quality__img">
-					<img src="icons/shield.svg" alt="shield">
+		<div class="bg-bg">
+			<div class="container">
+				<div class="quality">
+					<div class="quality__info">
+						<h2>Quality Certifications</h2>
+						<p>We have certificates to prove the quality of our training. Our students receive certificates at the
+							end of the course to prove that they are professionally trained.</p>
+					</div>
+					<div class="quality__img">
+						<img src="icons/shield.svg" alt="shield">
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</section-quality>
 
 	<section-instructors>
@@ -586,42 +623,48 @@
 	</section-instructors>
 
 	<footer>
-		<div class="container footer-bg">
-			<div class="footer-responsive">
-				<div class="logo-ball">
-					<a href="index.html">
-						<p>Drawing
-							TheBody
-							Course</p>
-					</a>
-				</div>
-				<div id="contact" class="socail">
-					<nav class="footer__menu">
-						<div class="link-img">
-							<img src="img/footer/round-place-24px.svg" alt="icons">
-							<a class="footer__link active" href="#">11 Default Street, London,<br>SE1 3LE, United Kingdom</a>
-						</div>
-						<div class="link-img">
-							<img class="link-img-padding" src="img/footer/twitter black.1.svg" alt="icons">
-							<img src="img/footer/instagram black.1.svg" alt="icons">
+		<div class="bg-bg">
+			<div class="container footer-bg">
+				<div class="footer-responsive">
+					<div class="logo-ball">
+						<a href="index.html">
+							<p>Drawing
+								TheBody
+								Course</p>
+						</a>
+					</div>
+					<div id="footer" class="socail">
+						<nav class="footer__menu">
+							<div class="link-img">
+								<img src="img/footer/round-place-24px.svg" alt="icons">
+								<a class="footer__link active" href="#">11 Default Street, London,<br>SE1 3LE, United
+									Kingdom</a>
+							</div>
+							<div class="link-img">
+								<img class="link-img-padding" src="img/footer/twitter black.1.svg" alt="icons">
+								<img src="img/footer/instagram black.1.svg" alt="icons">
 
-							<a class="footer__link" href="#">Social Media</a>
+								<a class="footer__link" href="#">Social Media</a>
+							</div>
+							<div class="link-img">
+								<img src="img/footer/material-symbols_info-outline.svg" alt="icons">
+								<a class="footer__link" href="#">DYTRACH LTD Company<br>registration number: 14813676</a>
+							</div>
+						</nav>
+						<div class="info">
+							<a class="info__link" href="#">Refund policy</a>
+							<a class="info__link" href="#">Privacy policy</a>
+							<a class="info__link" href="#">Terms of use</a>
 						</div>
-						<div class="link-img">
-							<img src="img/footer/material-symbols_info-outline.svg" alt="icons">
-							<a class="footer__link" href="#">DYTRACH LTD Company<br>registration number: 14813676</a>
-						</div>
-					</nav>
-					<div class="info">
-						<a class="info__link" href="#">Refund policy</a>
-						<a class="info__link" href="#">Privacy policy</a>
-						<a class="info__link" href="#">Terms of use</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</footer>
 
+	<script src="js/vendors.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>
